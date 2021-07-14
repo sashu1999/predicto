@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v5.3.10, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.3.10, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  
+  
+  <title>Predicto</title>
+  <link rel="stylesheet" href="../static/css/mobirise2.css">
+  <link rel="stylesheet" href="../static/css/tether.min.css">
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../static/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="../static/css/animate.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/styles_s.css">
+  <link rel="stylesheet" href="../static/css/style_t.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Zen+Tokyo+Zoo:400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zen+Tokyo+Zoo:400&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=BioRhyme:200,300,400,700,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BioRhyme:200,300,400,700,800&display=swap"></noscript>
+  <link rel="preload" as="style" href="../static/css/mbr-additional.css"><link rel="stylesheet" href="../static/css/mbr-additional.css" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  
+  <section class="menu menu3 cid-sCEfcGu5se" once="menu" id="menu3-l">
+    
+    <nav class="navbar navbar-dropdown navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <div class="icons-menu">
+                    <a class="iconfont-wrapper" href="https://github.com/sashu1999" target="_blank">
+                        <span class="p-2 mbr-iconfont mobi-mbri-github mobi-mbri"></span>
+                    </a>
+                    <a class="iconfont-wrapper" href="https://www.instagram.com/sashu_1999/" target="_blank">
+                        <span class="p-2 mbr-iconfont socicon-instagram socicon"></span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="form1 cid-sCEerUzaOt mbr-fullscreen mbr-parallax-background" id="form1-k">
+
+    
+
+    
+    <div class="align-center container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="/predict" method="POST" class="mbr-form form-with-styler" >
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12"></div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some
+                            problem!</div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-12">
+                            <h1 class="mbr-section-title mb-4 display-2">
+                                <strong>P R E D I C T O</strong></h1>
+                        </div>
+                        <div class="col-12">
+                            <p class="mbr-text mbr-fonts-style mb-5 display-7">This application can predict the prices of Stocks in the Stock Market using various algorithms.</p>
+                        </div>
+                        <div class="col-md col-12 form-group" data-for="name">
+                            <input type="text" name="ticker" placeholder="Ticker" data-form-field="ticker" class="form-control" id="ticker">
+                        </div>
+                        <div class="col-md col-12 form-group" data-for="email">
+                            <select name="algorithm" id="algorithm" class="col-md col-12 form-group">
+                              <option value="1">Linear Regression</option>
+                              <option value="2">FB Prophet</option>
+                              <option value="3">LSTM</option>
+                              <option value="4">ARIMA</option>
+                            </select>
+                        </div>
+                        <div class="mbr-section-btn col-12 col-md-auto"><button type="submit" class="btn btn-primary display-4" formaction="/predict" >PREDICT</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+  </body>
+</html>

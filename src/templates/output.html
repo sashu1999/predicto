@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="preload" as="style" href="../static/css/mbr-additional.css"><link rel="stylesheet" href="../static/css/mbr-additional.css" type="text/css">
+        <title>Predicto</title>
+
+        <style>
+            h1 {text-align: center;}
+            p {text-align: center;}
+            body, html {
+              height: 100%;
+              margin: 0;
+            }
+
+            .bg {
+              /* The image used */
+              background-image: url('../static/images/er0aqagu8aaujhm-1200x916.jpg');
+
+              /* Full height */
+              height: 100%;
+
+              /* Center and scale the image nicely */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            </style>
+    </head>
+    <div class="bg">
+
+    <body>
+        <h1><text class="mbr-section-title mb-4 display-2">{{alg}}</text></h1>
+        <p><text class="mbr-text mbr-fonts-style mb-5 display-7">{{ticker}}  |  RMSE = {{error}}</text></p>
+        <div id='chart' class='chart'></div>
+    </body>
+    </div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+        var graphs = {{plot | safe}};
+        Plotly.newPlot('chart',graphs,{});
+    </script>
+
+
+</html>
