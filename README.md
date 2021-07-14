@@ -10,3 +10,34 @@ PREDICTO is a web based application that predicts the Stock prices based on Mach
 
 
 In, this project, we make use of various algorithms like Linear Regression, Facbook's Prophet, LSTM and ARIMA, to predict the prices of Stock for the next 100 days.
+
+## Setting Up
+
+1. Download or Clone the Respository
+
+2. Create a seperate project environment - Recommended
+
+      > conda create --name env_name python=3.8
+     
+      > conda activate env_name
+
+3. Installing the Required Packages
+      > pip install -r requirements.txt
+
+
+3. Running the Applicaation
+      > cd predicto/src
+  
+      > python main.py
+
+## Results
+
+### Linear Regression
+![screencapture-127-0-0-1-5000-predict-2021-07-14-11_48_46](https://user-images.githubusercontent.com/58512797/125577054-04eb2878-329a-4358-8d6b-74d674464775.png)
+### Facebook Prophet
+![screencapture-127-0-0-1-5000-predict-2021-07-14-11_49_07](https://user-images.githubusercontent.com/58512797/125577040-200ef667-7fa3-47a6-8b36-086470a31421.png)
+### LSTM
+![screencapture-127-0-0-1-5000-predict-2021-07-14-11_52_49](https://user-images.githubusercontent.com/58512797/125577047-ff682147-5970-4a0d-9e29-2aed6227eea3.png)
+### ARIMA
+![screencapture-127-0-0-1-5000-predict-2021-07-14-11_53_28](https://user-images.githubusercontent.com/58512797/125577051-02864fdf-aadd-4fa7-9063-633ca759c830.png)
+
