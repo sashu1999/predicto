@@ -129,10 +129,10 @@ def lstm_graph(df):
 
     fig = go.Figure()
     fig.add_trace(
-        go.Scatter(x=final_df.head(len(final_df) - 100)['Date'], y=final_df.head(len(final_df) - 100)['Close'],
+        go.Scatter(x=final_df.loc[len(final_df)-198:len(final_df)-99]['Date'], y=final_df.loc[len(final_df)-198:len(final_df)-99]['Close'],
                    mode='lines',
                    name='Current'))
-    fig.add_trace(go.Scatter(x=final_df.tail(101)['Date'], y=final_df.tail(101)['Close'],
+    fig.add_trace(go.Scatter(x=final_df.loc[len(final_df)-100:]['Date'], y=final_df.loc[len(final_df)-100:]['Close'],
                              mode='lines',
                              name='Predicted'))
 
