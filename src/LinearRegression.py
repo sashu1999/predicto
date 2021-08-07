@@ -25,7 +25,7 @@ def linear_regression(df, dates):
     data = {'Date': dates, 'Close': x}
     df_temp = pd.DataFrame(data=data)
     result_df = pd.concat([final_df, df_temp])
-
+    result_df = result_df.reset_index()
     return result_df
 
 
